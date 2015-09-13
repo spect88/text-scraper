@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var textScraper = require('../index');
+
+if (process.argv.length < 3) {
+  console.error('Usage: text-scraper http://some.url\n');
+  process.exit(1);
+}
+
+var url = process.argv[2];
+
+textScraper.scrapeURL(url, function(err, text) {
+  if (err) {
+    console.error(err.stack);
+    return;
+  }
+
+  process.stdout.write(text + '\n');
+});
