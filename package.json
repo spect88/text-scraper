@@ -1,6 +1,6 @@
 {
   "name": "text-scraper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A library for extracting text from html documents of arbitrary encoding",
   "main": "index.js",
   "bin": {
@@ -16,6 +16,14 @@
   ],
   "author": "Tomasz Szczęśniak-Szlagowski <spect88@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spect88/text-scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spect88/text-scraper/issues"
+  },
+  "homepage": "https://github.com/spect88/text-scraper#readme",
   "dependencies": {
     "cheerio": "^0.19.0",
     "html-to-utf8": "^0.1.0",
