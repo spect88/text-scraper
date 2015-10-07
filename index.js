@@ -2,7 +2,7 @@
 
 var request = require('superagent');
 
-var convertEncoding = require('./lib/encoding-converter');
+var convertEncoding = require('html-to-utf8');
 var extractText = require('./lib/text-extractor');
 
 exports.scrape = function scrape(htmlContent, contentType) {
